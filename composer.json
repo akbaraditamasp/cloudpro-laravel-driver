@@ -1,0 +1,21 @@
+{
+    "name": "akbaraditamasp/cloudpro-laravel-driver",
+    "description": "CloudPRO driver for Laravel project",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Akbar Aditama Supriyono Putra",
+            "email": "akbaraditamasp@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CloudPROLaravel\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "akbaraditamasp/cloudpro-php": "^1.0"
+    }
+}
