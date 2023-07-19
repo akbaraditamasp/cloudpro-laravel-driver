@@ -15,11 +15,11 @@ class CloudPRO implements Cloud
         $this->options = $options;
     }
 
-    public function put($filename, $contents, $options = [])
+    public function put($filename, $contents, $options = [], $nodeOptions = [])
     {
         return \CloudPRO\CloudPRO::begin()
             ->useBoxToken($this->options["pro_box_token"])
-            ->storeFile($filename, $contents, [], [
+            ->storeFile($filename, $contents, $nodeOptions, [
                 "filename" => $filename
             ]);
     }
